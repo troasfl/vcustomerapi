@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: troas-customer-api-app
+  namespace:  troas-customer-api-ns
+  labels:
+    app: troas-customer-api-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: troas-customer-api-app
+  template:
+    metadata:
+      name: troas-customer-api-app
+      labels:
+        app: troas-customer-api-app
+    spec:
+      containers:
+        - name: troas-customer-api-app
+          image: troasfl/troas-customer-api:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080 # Port exposed by the container
+              protocol: TCP
+              name: http # Port name exposed by the container
+      restartPolicy: Always
