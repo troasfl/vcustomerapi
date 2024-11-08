@@ -16,6 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Troas.Customer.Application"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Troas.Customer.UnitTests", "tests\Troas.Customer.UnitTests\Troas.Customer.UnitTests.csproj", "{B410B071-D1A4-41D9-B779-34E50656450B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Troas.Customer.IntegrationTests", "tests\Troas.Customer.IntegrationTests\Troas.Customer.IntegrationTests.csproj", "{58FD470B-1B00-4F15-955B-BB955AD742FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +44,10 @@ Global
 		{B410B071-D1A4-41D9-B779-34E50656450B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B410B071-D1A4-41D9-B779-34E50656450B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B410B071-D1A4-41D9-B779-34E50656450B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58FD470B-1B00-4F15-955B-BB955AD742FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58FD470B-1B00-4F15-955B-BB955AD742FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58FD470B-1B00-4F15-955B-BB955AD742FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58FD470B-1B00-4F15-955B-BB955AD742FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3953E826-3257-4A1E-99D9-8E42526739DF} = {1DAC77F5-9E32-4219-B892-FCA48F1FD7BB}
@@ -49,5 +55,6 @@ Global
 		{950199BD-F333-4754-B06E-7C2E4779E95D} = {1DAC77F5-9E32-4219-B892-FCA48F1FD7BB}
 		{D180E5D8-7262-4271-A48C-B8B957F94553} = {1DAC77F5-9E32-4219-B892-FCA48F1FD7BB}
 		{B410B071-D1A4-41D9-B779-34E50656450B} = {8F833044-CDF0-4E79-91B0-BB40B341870F}
+		{58FD470B-1B00-4F15-955B-BB955AD742FC} = {8F833044-CDF0-4E79-91B0-BB40B341870F}
 	EndGlobalSection
 EndGlobal
