@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Troas.Customer.Domain", "sr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Troas.Customer.Infrastructure", "src\Troas.Customer.Infrastructure\Troas.Customer.Infrastructure.csproj", "{950199BD-F333-4754-B06E-7C2E4779E95D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Troas.Customer.Application", "src\Troas.Customer.Application\Troas.Customer.Application.csproj", "{D180E5D8-7262-4271-A48C-B8B957F94553}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,10 +32,15 @@ Global
 		{950199BD-F333-4754-B06E-7C2E4779E95D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{950199BD-F333-4754-B06E-7C2E4779E95D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{950199BD-F333-4754-B06E-7C2E4779E95D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D180E5D8-7262-4271-A48C-B8B957F94553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D180E5D8-7262-4271-A48C-B8B957F94553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D180E5D8-7262-4271-A48C-B8B957F94553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D180E5D8-7262-4271-A48C-B8B957F94553}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3953E826-3257-4A1E-99D9-8E42526739DF} = {1DAC77F5-9E32-4219-B892-FCA48F1FD7BB}
 		{2AFA0F58-F7FB-4F4C-B987-E5A5BE2EA00E} = {1DAC77F5-9E32-4219-B892-FCA48F1FD7BB}
 		{950199BD-F333-4754-B06E-7C2E4779E95D} = {1DAC77F5-9E32-4219-B892-FCA48F1FD7BB}
+		{D180E5D8-7262-4271-A48C-B8B957F94553} = {1DAC77F5-9E32-4219-B892-FCA48F1FD7BB}
 	EndGlobalSection
 EndGlobal
