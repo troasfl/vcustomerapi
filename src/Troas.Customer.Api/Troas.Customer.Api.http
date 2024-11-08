@@ -1,0 +1,6 @@
+@Troas.Customer.Api_HostAddress = http://localhost:5182
+
+GET {{Troas.Customer.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
