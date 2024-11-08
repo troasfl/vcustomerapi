@@ -5,7 +5,6 @@ using OpenTelemetry.Trace;
 using Troas.Customer.Application.DbServices;
 using Troas.Customer.Infrastructure.Persistence;
 
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Configure Application Insights telemetry collection.
@@ -68,4 +67,7 @@ app.MapControllers();
 
 app.Run();
 
-public partial class Program { } // Make Program class partial for testing purposes
+namespace Troas.Customer.Api
+{
+    public partial class Program { }
+} // Make Program class partial for testing purposes

@@ -2,6 +2,7 @@ using System.Net;
 using System.Net.Http.Json;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.DependencyInjection;
+using Troas.Customer.Api;
 using Troas.Customer.Api.Models;
 using Troas.Customer.Infrastructure.Persistence;
 
