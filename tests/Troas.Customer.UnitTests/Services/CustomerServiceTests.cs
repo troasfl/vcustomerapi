@@ -1,5 +1,6 @@
 using Moq;
 using Troas.Customer.Application.DbServices;
+using Troas.Customer.Application.HelperServices;
 using Troas.Customer.Infrastructure.Persistence;
 
 namespace Troas.Customer.UnitTests.Services;
@@ -25,8 +26,8 @@ public class CustomerServiceTests
             FirstName = "Fredrick",
             LastName = "Lutterodt",
             MiddleName = "Troas",
-            EmailAddress = "troasfl@gmail.com",
-            PhoneNumber = "2175006661",
+            EmailAddress = $"{Guid.NewGuid()}@gmail.com",
+            PhoneNumber = NumberGenerator.GenerateRandomPhoneNumber(),
             CreatedAt = DateTime.UtcNow
         };
         _mockCustomerRepository.Setup(repo => repo.AddCustomerAsync(It.IsAny<Domain.Customer>()))

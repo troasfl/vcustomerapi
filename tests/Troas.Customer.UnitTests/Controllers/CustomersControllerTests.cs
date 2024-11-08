@@ -4,6 +4,7 @@ using Moq;
 using Troas.Customer.Api.Controllers;
 using Troas.Customer.Api.Models;
 using Troas.Customer.Application.DbServices;
+using Troas.Customer.Application.HelperServices;
 
 namespace Troas.Customer.UnitTests.Controllers;
 
@@ -30,8 +31,8 @@ public class CustomersControllerTests
             FirstName = "Fredrick",
             LastName = "Lutterodt",
             MiddleName = "Troas",
-            EmailAddress = "troasfl@gmail.com",
-            PhoneNumber = "2175006661",
+            EmailAddress = $"{Guid.NewGuid()}@gmail.com",
+            PhoneNumber = NumberGenerator.GenerateRandomPhoneNumber(),
             CreatedAt = DateTime.UtcNow
         };
         _customerServiceMock.Setup(service => service.CreateCustomerAsync(customer)).ReturnsAsync(customer);

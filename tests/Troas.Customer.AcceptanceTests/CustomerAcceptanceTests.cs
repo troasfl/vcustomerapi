@@ -2,6 +2,7 @@ using System.Net;
 using System.Net.Http.Json;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Troas.Customer.Api.Models;
+using Troas.Customer.Application.HelperServices;
 using Program = Troas.Customer.Api.Program;
 
 namespace Troas.Customer.AcceptanceTests;
@@ -23,8 +24,8 @@ public class CustomerAcceptanceTests : IClassFixture<WebApplicationFactory<Progr
         {
             FirstName = "Fredrick",
             LastName = "Lutterodt",
-            EmailAddress = "fred.lutt@gmail.com",
-            PhoneNumber = "2175556661"
+            EmailAddress = $"{Guid.NewGuid()}@gmail.com",
+            PhoneNumber = NumberGenerator.GenerateRandomPhoneNumber(),
         };
 
         // Act
