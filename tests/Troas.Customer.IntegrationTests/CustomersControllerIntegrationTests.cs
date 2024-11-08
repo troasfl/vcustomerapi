@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.DependencyInjection;
 using Troas.Customer.Api;
 using Troas.Customer.Api.Models;
+using Troas.Customer.Application.HelperServices;
 using Troas.Customer.Infrastructure.Persistence;
 
 namespace Troas.Customer.IntegrationTests;
@@ -30,8 +31,8 @@ public class CustomersControllerIntegrationTests : IClassFixture<WebApplicationF
             FirstName = "Fredrick",
             LastName = "Lutterodt",
             MiddleName = "T",
-            EmailAddress = "fred.lutt@gmail.com",
-            PhoneNumber = "217555661"
+            EmailAddress = $"{Guid.NewGuid():N}@gmail.com",
+            PhoneNumber = NumberGenerator.GenerateRandomPhoneNumber()
         };
 
         // Act
